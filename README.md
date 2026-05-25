@@ -1,0 +1,2 @@
+# paste-docs
+Smart Tool
