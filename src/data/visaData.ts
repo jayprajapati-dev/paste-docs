@@ -1,0 +1,14 @@
+export const ALL_VISAS = [
+  { slug: "us-visa", name: "USA Visa / Passport", country: "United States", category: "Americas", description: "Square format, white background. For DS-160 form.", photo: { width: 600, height: 600, minKB: 54, maxKB: 240, format: "jpeg", background: "white" } },
+  { slug: "uk-visa", name: "UK Visa", country: "United Kingdom", category: "Europe", description: "45x35mm, light grey background.", photo: { width: 413, height: 531, minKB: 10, maxKB: 6144, format: "jpeg", background: "light grey" } },
+  { slug: "schengen-visa", name: "Schengen Visa (Europe)", country: "27 EU Countries", category: "Europe", description: "Standard EU format, 35x45mm.", photo: { width: 413, height: 531, minKB: 10, maxKB: 1024, format: "jpeg", background: "white or light grey" } },
+  { slug: "canada-visa", name: "Canada Visa / PR", country: "Canada", category: "Americas", description: "35x45mm, white background, max 4MB.", photo: { width: 420, height: 540, minKB: 10, maxKB: 4096, format: "jpeg", background: "white" } },
+  { slug: "australia-visa", name: "Australia Visa", country: "Australia", category: "Asia Pacific", description: "35x45mm, white background, max 10MB.", photo: { width: 413, height: 531, minKB: 10, maxKB: 10240, format: "jpeg", background: "white" } },
+  { slug: "uae-visa", name: "UAE / Dubai Visa", country: "UAE", category: "Middle East", description: "43x55mm, white background.", photo: { width: 413, height: 531, minKB: 10, maxKB: 1024, format: "jpeg", background: "white" } },
+  { slug: "singapore-visa", name: "Singapore Visa", country: "Singapore", category: "Asia Pacific", description: "35x45mm, strict 60KB limit.", photo: { width: 400, height: 514, minKB: 10, maxKB: 60, format: "jpeg", background: "white" } },
+  { slug: "japan-visa", name: "Japan Visa", country: "Japan", category: "Asia Pacific", description: "4x4cm square, white background.", photo: { width: 472, height: 472, minKB: 10, maxKB: 2048, format: "jpeg", background: "white" } },
+  { slug: "germany-visa", name: "Germany Visa", country: "Germany", category: "Europe", description: "35x45mm, light grey background.", photo: { width: 413, height: 531, minKB: 10, maxKB: 1024, format: "jpeg", background: "light grey" } },
+  { slug: "france-visa", name: "France Visa", country: "France", category: "Europe", description: "35x45mm, light grey background.", photo: { width: 413, height: 531, minKB: 10, maxKB: 1024, format: "jpeg", background: "light grey" } },
+  { slug: "malaysia-visa", name: "Malaysia Visa", country: "Malaysia", category: "Asia Pacific", description: "35x45mm, white background.", photo: { width: 413, height: 531, minKB: 10, maxKB: 1024, format: "jpeg", background: "white" } },
+  { slug: "new-zealand-visa", name: "New Zealand Visa", country: "New Zealand", category: "Asia Pacific", description: "35x45mm, white background.", photo: { width: 413, height: 531, minKB: 10, maxKB: 5120, format: "jpeg", background: "white" } },
+];

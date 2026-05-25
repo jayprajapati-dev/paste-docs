@@ -1,0 +1,6 @@
+{
+  "name": "PasteDocs",
+  "description": "Smart, local-first government document preparation tool for effortless, secure uploads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

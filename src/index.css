@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  --tracking-tightest: -0.03em;
+  --tracking-tighter: -0.025em;
+  --tracking-tight: -0.015em;
+  --leading-display: 1.1;
+  --leading-heading: 1.25;
+  --leading-body: 1.65;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-zinc-600 bg-white leading-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-zinc-950;
+  }
+}

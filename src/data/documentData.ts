@@ -1,0 +1,17 @@
+export const ALL_DOCUMENTS = [
+  { slug: "indian-passport", name: "Indian Passport", category: "Identity", photo: { width: 413, height: 531, minKB: 10, maxKB: 1024, format: "jpeg", background: "white" } },
+  { slug: "pan-card", name: "PAN Card", category: "Identity", photo: { width: 213, height: 213, minKB: 10, maxKB: 50, format: "jpeg" }, signature: { width: 213, height: 71, minKB: 5, maxKB: 30, format: "jpeg" } },
+  { slug: "aadhaar-update", name: "Aadhaar Update", category: "Identity", photo: { width: 200, height: 200, minKB: 10, maxKB: 2048, format: "jpeg" } },
+  { slug: "voter-id", name: "Voter ID", category: "Identity", photo: { width: 200, height: 240, minKB: 10, maxKB: 100, format: "jpeg" } },
+  { slug: "driving-licence", name: "Driving Licence", category: "Identity", photo: { width: 200, height: 200, minKB: 10, maxKB: 100, format: "jpeg" } },
+  { slug: "ration-card", name: "Ration Card Document", category: "Document", photo: { format: "pdf", maxKB: 300 } },
+  { slug: "caste-certificate", name: "Caste Certificate", category: "Document", photo: { format: "pdf", maxKB: 200 } },
+  { slug: "income-certificate", name: "Income Certificate", category: "Document", photo: { format: "pdf", maxKB: 200 } },
+  { slug: "marksheet-compress", name: "Marksheet PDF Compress", category: "Document", photo: { format: "pdf", maxKB: 500 } },
+  { slug: "avak-dakhlo", name: "Avak Dakhlo (Gujarat)", category: "Document", photo: { format: "pdf", maxKB: 200 } },
+  { slug: "satbara-utara", name: "7/12 Satbara Utara", category: "Document", photo: { format: "pdf", maxKB: 300 } },
+  { slug: "10th-board-marksheet", name: "10th Board Marksheet", category: "Document", photo: { format: "pdf", maxKB: 300 } },
+  { slug: "12th-board-marksheet", name: "12th Board Marksheet", category: "Document", photo: { format: "pdf", maxKB: 300 } },
+  { slug: "acpc-registration-document", name: "ACPC Any Form / Doc", category: "Document", photo: { format: "pdf", maxKB: 400 } },
+  { slug: "diploma-marksheet", name: "Diploma Sem 5 & 6 Marksheet", category: "Document", photo: { format: "pdf", maxKB: 500 } },
+]
