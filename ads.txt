@@ -1,8 +1,0 @@
-OWNERDOMAIN=pastedocs.vercel.app
-MANAGERDOMAIN=advorexmedia.com
-
-# Advorex Media
-advorexmedia.com, PUB40899235, DIRECT
-
-# Site verification
-Profiton check: 01be259bf84c242082e48223578f3151
