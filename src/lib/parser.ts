@@ -30,6 +30,7 @@ export type Requirements = {
   faceCoverageHint?: string;
   recencyHint?: string;
   inkColorHint?: string;
+  rotate?: 90 | 180 | 270;
 
   detectedFields?: string[];
 };

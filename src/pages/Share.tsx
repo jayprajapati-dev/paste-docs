@@ -33,6 +33,7 @@ export default function Share() {
       <Helmet>
         <title>PasteDocs | Share with Friends</title>
         <meta name="description" content="Share PasteDocs with your friends and study groups on WhatsApp. Help them resize their photos for exams and applications easily." />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://pastedocs.vercel.app/share" />
       </Helmet>
       

@@ -32,6 +32,7 @@ export default function Terms() {
       <Helmet>
         <title>Terms of Service | PasteDocs Local-First Biometric Security</title>
         <meta name="description" content="Read our terms of service. Understand our absolute liability disclaimer for local-runtime biometric resizers under Indian jurisdiction." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://pastedocs.vercel.app/terms" />
         <meta property="og:title" content="Terms of Service | PasteDocs Local-First Biometric Security" />
         <meta property="og:description" content="Read our terms of service. Understand our absolute liability disclaimer for local-runtime biometric resizers under Indian jurisdiction." />

@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://pastedocs.vercel.app" />
     <link rel="dns-prefetch" href="https://pastedocs.vercel.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+    <!-- Preconnect to Unsplash (og:image + blog post hero images) and the
+         onnxruntime / @imgly CDN (background-removal ML model) so the
+         first tool that needs them doesn't block on DNS + TLS handshake. -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="canonical" href="https://pastedocs.vercel.app/" />
     <meta property="og:url" content="https://pastedocs.vercel.app/" />
     <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <!-- RSS feed — Google subscribes to RSS for faster blog content discovery -->
+    <link rel="alternate" type="application/rss+xml" title="PasteDocs Blog" href="https://pastedocs.vercel.app/rss.xml" />
+    <!-- IndexNow key — auto-pings search engines when content changes -->
+    <meta name="indexnow-key" content="d9f08ac2fbe74203a29972770cc358c9" />
+    <title>PasteDocs — Online Photo & Signature Resizer for Government Exams</title>
+    <meta name="description" content="Free online photo resizer, signature converter and image compressor for Indian government exams (NEET, SSC, UPSC) and visa applications. 100% private, runs in your browser." />
+    <meta name="author" content="PasteDocs" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta property="og:title" content="PasteDocs — Online Photo & Signature Resizer for Government Exams" />
+    <meta property="og:description" content="Free online photo resizer, signature converter and image compressor for Indian government exams and visa applications. 100% private, runs in your browser." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PasteDocs" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Google AdSense (sole ad network — required for approval) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1859756361440248"
      crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-1859756361440248" />
     <meta name="google-site-verification" content="zVSkTVXZW1_MftJLxTkrSbH6aeCbNZE79QHVI66GXhE" />
-    <meta name="galaksion-domain-verification" content="99d45d4cfcfd8ab94e3903e84685377fca4b0092a017eb03484690d1ffed1ce5" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://www.transparenttextures.com; connect-src 'self' data: blob:;" />
-    <title>PasteDocs</title>
+    <!--
+      Content-Security-Policy updated to allow AdSense scripts and Google Fonts.
+      Removed competing third-party ad networks (Galaksion / advorexmedia) —
+      AdSense requires exclusive placement for approval.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://images.unsplash.com https://www.transparenttextures.com https://pagead2.googlesyndication.com; connect-src 'self' data: blob: https://pagead2.googlesyndication.com; frame-src 'self' https://googleads.g.doubleclick.net https://www.google.com;" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <ins class="avm-ad" style="display:block" data-domain="pastedocs.vercel.app" data-slot="tech" data-format="bottom_sticky"></ins>
-<script async src="https://advorexmedia.com/tag.js"></script>
   </body>
 </html>
-

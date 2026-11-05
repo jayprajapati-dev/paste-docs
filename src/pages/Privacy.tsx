@@ -32,6 +32,7 @@ export default function Privacy() {
       <Helmet>
         <title>Privacy Policy | PasteDocs Local-First Biometric Security</title>
         <meta name="description" content="Read how PasteDocs enforces 100% Client-Side WebAssembly data isolation, zero cookie tracking, and zero server logs for your biometric and identity document files." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://pastedocs.vercel.app/privacy" />
         <meta property="og:title" content="Privacy Policy | PasteDocs Local-First Biometric Security" />
         <meta property="og:description" content="Read how PasteDocs enforces 100% Client-Side WebAssembly data isolation, zero cookie tracking, and zero server logs for your biometric and identity document files." />

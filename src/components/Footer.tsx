@@ -37,6 +37,11 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/tool/neet-postcard-photo" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors leading-loose block py-1">
+                    NEET Postcard Photo
+                  </Link>
+                </li>
+                <li>
                   <Link to="/exam/ssc-cgl" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors leading-loose block py-1">
                     SSC CGL
                   </Link>
@@ -47,13 +52,13 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/visa/us-visa" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors leading-loose block py-1">
-                    US Visa Photo
+                  <Link to="/tool/exif-remover" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors leading-loose block py-1">
+                    Remove EXIF Metadata
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tool/passport-size" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors leading-loose block py-1">
-                    Passport Size
+                  <Link to="/visa/us-visa" className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors leading-loose block py-1">
+                    US Visa Photo
                   </Link>
                 </li>
               </ul>

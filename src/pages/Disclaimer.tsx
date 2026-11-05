@@ -32,6 +32,7 @@ export default function Disclaimer() {
       <Helmet>
         <title>Disclaimer | PasteDocs Local-First Biometric Security</title>
         <meta name="description" content="Legal and liability disclaimers for using the PasteDocs image resizer. Understand your verification responsibilities under 100% offline data isolation." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://pastedocs.vercel.app/disclaimer" />
         <meta property="og:title" content="Disclaimer | PasteDocs Local-First Biometric Security" />
         <meta property="og:description" content="Legal and liability disclaimers for using the PasteDocs image resizer. Understand your verification responsibilities under 100% offline data isolation." />

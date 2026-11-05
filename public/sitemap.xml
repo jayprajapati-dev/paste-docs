@@ -2,584 +2,1130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pastedocs.vercel.app</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>1.0</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tools</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/about</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/contact</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/privacy</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/terms</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/disclaimer</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/share</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/stats</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/tools</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/tool/compress-photo-20kb</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/tool/compress-20kb</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/tool/compress-photo-50kb</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/tool/compress-50kb</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/tool/compress-photo-100kb</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/tool/compress-100kb</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/tool/compress-photo-200kb</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/tool/compress-200kb</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/tool/passport-size-photo</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/tool/passport-size</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/tool/stamp-size-photo</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/tool/passport-photo-maker</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/stamp-size</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/signature-resize</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/jpg-to-png</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/png-to-jpg</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/heic-to-jpg</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/white-background</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/remove-background</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/pdf-compress</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/tool/image-to-pdf</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/pdf-to-jpg</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/word-to-pdf</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/excel-to-pdf</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/ppt-to-pdf</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/txt-to-pdf</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/merge-images-to-pdf</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/add-name-date</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/custom-resize</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/neet-postcard-photo</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-10kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-30kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-500kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-1mb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/exif-remover</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/photo-rotate</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/webp-to-jpg</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-5kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-15kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-25kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-40kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-60kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-70kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-80kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-90kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-150kb</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/tool/compress-250kb</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/neet-ug</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/jee-main</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/jee-advanced</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/upsc-cse</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/upsc-cds</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/upsc-nda</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/ssc-cgl</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ssc-chsl</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ssc-gd</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ssc-mts</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ssc-cpo</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/ibps-po</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ibps-clerk</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ibps-rrb-po</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/sbi-po</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/sbi-clerk</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rbi-grade-b</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rbi-assistant</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/canara-bank</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/union-bank</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/indian-bank</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/railway-ntpc</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/railway-group-d</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rrb-alp</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/india-post-gds</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/ctet</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/cuet-ug</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/gate</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/nda-exam</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rpf-constable</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/epfo-ssa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/lic-aao</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/gpsc</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/mpsc</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/exam/tnpsc</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/doc/passport-photo</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://pastedocs.vercel.app/exam/kpsc</loc>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/kerala-psc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/uppsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/bpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/mppsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/appsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/tspsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/wbpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/hpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ppsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ukpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/jkpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/cgpsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/opsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/apsc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/ddcet</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/acpc-admission</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/gseb-10th-board</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/gseb-12th-board</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/up-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/delhi-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/mp-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rajasthan-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/maharashtra-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/wb-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/bihar-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/haryana-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/gujarat-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/tn-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/kerala-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/odisha-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/karnataka-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/assam-police</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/delhi-judiciary</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/patna-hc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/bombay-hc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/rajasthan-judiciary</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/mp-judiciary</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/gauhati-hc</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/exam/chhattisgarh-judiciary</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/doc/indian-passport</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/doc/pan-card-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/pan-card</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/doc/aadhaar-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/aadhaar-update</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/us-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/voter-id</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/uk-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/driving-licence</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/schengen-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/ration-card</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/canada-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/caste-certificate</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/australia-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/income-certificate</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/dubai-uae-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/marksheet-compress</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/singapore-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/avak-dakhlo</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/visa/japan-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <loc>https://pastedocs.vercel.app/doc/satbara-utara</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/doc/10th-board-marksheet</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/doc/12th-board-marksheet</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/doc/acpc-registration-document</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/doc/diploma-marksheet</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/us-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/uk-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/schengen-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/canada-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/australia-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/uae-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/singapore-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/japan-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/germany-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/france-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/malaysia-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/new-zealand-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/china-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/russia-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/saudi-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/thailand-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/south-korea-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/brazil-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/visa/indonesia-visa</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/10th-board-marksheet</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/5-common-photo-mistakes</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/aadhaar-photo-document-upload-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/complete-document-formatting-banking</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/compress-photo-to-50kb-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/heic-to-jpg-iphone-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/how-to-compress-passport-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/how-to-convert-to-jpeg-jpg</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/how-to-resize-photo-signature-ssc</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/ibps-po-photo-size-2026</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/image-to-pdf-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/neet-photo-size-2026-complete-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/never-upload-aadhaar-pan</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/ojas-gujarat-photo-signature-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/passport-size-photo-dimensions-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/pdf-compress-to-100kb-200kb-500kb-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/photo-rejected-government-portal</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/remove-background-from-photo-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/resize-photo-exact-dimensions</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/resize-signature-online-without-losing-quality</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/safely-format-crop-signature</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/sbi-po</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/signature-converter-online-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pastedocs.vercel.app/blog/ssc-cgl-photo-size-2026</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/state-exam-document-resize</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/ultimate-checklist-upsc-ias</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pastedocs.vercel.app/blog/understand-photo-rules-ssc-neet-upsc</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/blog/compress-photo-20kb</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://pastedocs.vercel.app/blog/upsc-photo-signature-size-2026</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pastedocs.vercel.app/blog/compress-photo-50kb</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/compress-photo-100kb</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/compress-photo-200kb</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/passport-size-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/stamp-size-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/signature-resize</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/jpg-to-png</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/png-to-jpg</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/heic-to-jpg</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/white-background</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/pdf-compress</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/image-to-pdf</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/neet-ug</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/jee-main</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/upsc-cse</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/ssc-cgl</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/ibps-po</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/sbi-po</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/railway-ntpc</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/india-post-gds</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/ctet</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/cuet-ug</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/gpsc</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/mpsc</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/tnpsc</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/passport-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/pan-card-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/aadhaar-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/us-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/uk-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/schengen-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/canada-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/australia-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/dubai-uae-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/singapore-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://pastedocs.vercel.app/blog/japan-visa-photo</loc>
-    <lastmod>2026-05-25</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
+    <loc>https://pastedocs.vercel.app/blog/us-visa-photo-tool-guide</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

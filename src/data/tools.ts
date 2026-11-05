@@ -12,7 +12,7 @@ export interface ToolData {
 
 export const toolsData: ToolData[] = [
   {
-    slug: "compress-photo-50kb",
+    slug: "compress-50kb",
     name: "Compress Photo to 50KB",
     metaTitle: "Compress Photo to 50KB Online Free | Reduce JPEG to 50KB",
     metaDescription: "Instantly compress image & photo to 50KB without losing quality. 100% free, private Client-Side tool for safe online form uploads.",
@@ -42,12 +42,12 @@ export const toolsData: ToolData[] = [
       }
     ],
     relatedPages: [
-      { name: "Compress Photo to 20KB", url: "/tool/compress-photo-20kb" },
+      { name: "Compress Photo to 20KB", url: "/tool/compress-20kb" },
       { name: "SSC CGL Photo Resize", url: "/exam/ssc-cgl" }
     ]
   },
   {
-    slug: "compress-photo-20kb",
+    slug: "compress-20kb",
     name: "Compress Photo to 20KB",
     metaTitle: "Compress Photo to 20KB exactly (Free & Offline) | PasteDocs",
     metaDescription: "Reduce image file size to 20KB. Safe, private, watermark-free tool configured specifically for signature sizes & ID photos.",
@@ -78,11 +78,11 @@ export const toolsData: ToolData[] = [
     ],
     relatedPages: [
       { name: "Signature Resize", url: "/tool/signature-resize" },
-      { name: "Compress Photo to 50KB", url: "/tool/compress-photo-50kb" }
+      { name: "Compress Photo to 50KB", url: "/tool/compress-50kb" }
     ]
   },
   {
-    slug: "compress-photo-100kb",
+    slug: "compress-100kb",
     name: "Compress Photo to 100KB",
     metaTitle: "Compress Image to 100KB Online within 5 seconds",
     metaDescription: "Best tool to compress any JPEG/JPG photo up to 100KB size. Fast, works offline, completely free and safe.",
@@ -113,11 +113,11 @@ export const toolsData: ToolData[] = [
     ],
     relatedPages: [
       { name: "PDF Compress", url: "/tool/pdf-compress" },
-      { name: "Compress Photo to 200KB", url: "/tool/compress-photo-200kb" }
+      { name: "Compress Photo to 200KB", url: "/tool/compress-200kb" }
     ]
   },
   {
-    slug: "compress-photo-200kb",
+    slug: "compress-200kb",
     name: "Compress Photo to 200KB",
     metaTitle: "Reduce Photo Size to 200KB Free online",
     metaDescription: "Easily compress large photos to exactly under 200KB for NEET, CUET or general applications. Free browser-based secure tool.",
@@ -148,7 +148,7 @@ export const toolsData: ToolData[] = [
     ],
     relatedPages: [
       { name: "NEET Photo Resize", url: "/exam/neet-ug" },
-      { name: "Compress Photo to 100KB", url: "/tool/compress-photo-100kb" }
+      { name: "Compress Photo to 100KB", url: "/tool/compress-100kb" }
     ]
   },
   {

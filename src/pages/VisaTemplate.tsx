@@ -82,18 +82,32 @@ export default function VisaTemplate() {
     }
   ];
 
+  const visaCanonical = `https://pastedocs.vercel.app/visa/${visa.slug}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pastedocs.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Visa Photos", "item": "https://pastedocs.vercel.app/tools" },
+      { "@type": "ListItem", "position": 3, "name": `${visa.country} Visa Photo`, "item": visaCanonical }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://pastedocs.vercel.app/visa/${visa.slug}`} />
+        <link rel="canonical" href={visaCanonical} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://pastedocs.vercel.app/visa/${visa.slug}`} />
+        <meta property="og:url" content={visaCanonical} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="PasteDocs" />
         <meta name="keywords" content={`${visa.country} visa photo, travel photo resize, browser biometric crop`} />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}

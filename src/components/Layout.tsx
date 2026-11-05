@@ -107,12 +107,14 @@ export default function Layout() {
                         Image Tools
                       </h4>
                       <div className="flex flex-col gap-2 text-sm">
-                        <Link to="/tool/compress-photo-50kb" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Compress to 50KB</Link>
-                        <Link to="/tool/compress-photo-20kb" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Compress to 20KB</Link>
-                        <Link to="/tool/passport-size-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Passport Size Photo</Link>
-                        <Link to="/tool/stamp-size-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Stamp Size Photo</Link>
+                        <Link to="/tool/compress-50kb" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Compress to 50KB</Link>
+                        <Link to="/tool/compress-20kb" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Compress to 20KB</Link>
+                        <Link to="/tool/compress-500kb" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Compress to 500KB</Link>
+                        <Link to="/tool/passport-size" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Passport Size Photo</Link>
+                        <Link to="/tool/neet-postcard-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">NEET Postcard Photo</Link>
+                        <Link to="/tool/stamp-size" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Stamp Size Photo</Link>
                         <Link to="/tool/signature-resize" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Signature Resize</Link>
-                        <Link to="/tool/white-background" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Add White Background</Link>
+                        <Link to="/tool/exif-remover" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Remove EXIF Metadata</Link>
                       </div>
                     </div>
 
@@ -129,6 +131,8 @@ export default function Layout() {
                           <Link to="/tool/heic-to-jpg" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">HEIC to JPG</Link>
                           <span className="bg-blue-50 text-blue-600 text-[8px] font-bold px-1 rounded">iOS</span>
                         </div>
+                        <Link to="/tool/webp-to-jpg" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">WebP to JPG</Link>
+                        <Link to="/tool/photo-rotate" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Rotate Photo</Link>
                         <Link to="/tool/image-to-pdf" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Image to PDF</Link>
                         <Link to="/tool/pdf-compress" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">PDF Compress</Link>
                         <Link to="/tool/pdf-to-jpg" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">PDF to Image</Link>
@@ -151,8 +155,8 @@ export default function Layout() {
                           <span className="bg-orange-50 text-orange-600 text-[9px] font-bold px-1.5 py-0.5 rounded">NEW</span>
                         </div>
                         <Link to="/exam/ibps-po" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-semibold hover:translate-x-0.5 transition-transform">IBPS PO Photo</Link>
-                        <Link to="/visa/us-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">US Visa Photo</Link>
-                        <Link to="/visa/schengen-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Schengen Visa</Link>
+                        <Link to="/visa/us-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">US Visa Photo</Link>
+                        <Link to="/visa/schengen-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Schengen Visa</Link>
                         <Link to="/doc/passport-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium hover:translate-x-0.5 transition-transform">Passport India</Link>
                       </div>
                     </div>
@@ -314,10 +318,10 @@ export default function Layout() {
                         Western Visa Photos
                       </h4>
                       <div className="grid grid-cols-4 gap-2 text-sm">
-                        <Link to="/visa/us-visa-photo" onClick={closeAllMenus} className="text-zinc-700 hover:text-blue-600 font-semibold">USA Visa</Link>
-                        <Link to="/visa/uk-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">UK Visa</Link>
-                        <Link to="/visa/schengen-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Schengen</Link>
-                        <Link to="/visa/canada-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Canada PR</Link>
+                        <Link to="/visa/us-visa" onClick={closeAllMenus} className="text-zinc-700 hover:text-blue-600 font-semibold">USA Visa</Link>
+                        <Link to="/visa/uk-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">UK Visa</Link>
+                        <Link to="/visa/schengen-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Schengen</Link>
+                        <Link to="/visa/canada-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Canada PR</Link>
                       </div>
                     </div>
 
@@ -328,10 +332,10 @@ export default function Layout() {
                         Asia & Middle East
                       </h4>
                       <div className="grid grid-cols-4 gap-2 text-sm">
-                        <Link to="/visa/dubai-uae-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Dubai UAE</Link>
-                        <Link to="/visa/singapore-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Singapore</Link>
-                        <Link to="/visa/japan-visa-photo" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Japan Visa</Link>
-                        <Link to="/visa/singapore-visa-photo" onClick={closeAllMenus} className="text-zinc-400 hover:text-zinc-400 cursor-not-allowed">Malaysia</Link>
+                        <Link to="/visa/uae-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Dubai UAE</Link>
+                        <Link to="/visa/singapore-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Singapore</Link>
+                        <Link to="/visa/japan-visa" onClick={closeAllMenus} className="text-zinc-600 hover:text-zinc-950 font-medium">Japan Visa</Link>
+                        <Link to="/visa/singapore-visa" onClick={closeAllMenus} className="text-zinc-400 hover:text-zinc-400 cursor-not-allowed">Malaysia</Link>
                       </div>
                     </div>
 
@@ -381,9 +385,9 @@ export default function Layout() {
                   </button>
                   {mobileAccordions.tools && (
                     <div className="flex flex-col gap-3 pl-3 pt-2 text-zinc-600 text-sm animate-in fade-in duration-200">
-                      <Link to="/tool/compress-photo-50kb" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Compress to 50KB</Link>
-                      <Link to="/tool/compress-photo-20kb" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Compress to 20KB</Link>
-                      <Link to="/tool/passport-size-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Passport Size photo</Link>
+                      <Link to="/tool/compress-50kb" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Compress to 50KB</Link>
+                      <Link to="/tool/compress-20kb" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Compress to 20KB</Link>
+                      <Link to="/tool/passport-size" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Passport Size photo</Link>
                       <Link to="/tool/signature-resize" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Signature Resizer 140x60</Link>
                       <Link to="/tool/jpg-to-png" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Convert JPG to PNG</Link>
                       <Link to="/tool/png-to-jpg" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Convert PNG to JPG</Link>
@@ -449,13 +453,13 @@ export default function Layout() {
                   </button>
                   {mobileAccordions.visa && (
                     <div className="flex flex-col gap-3 pl-3 pt-2 text-zinc-600 text-sm animate-in fade-in duration-200">
-                      <Link to="/visa/us-visa-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600 font-semibold">USA DS-160 Visa Photo</Link>
-                      <Link to="/visa/uk-visa-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">UK Visas & Immigration</Link>
-                      <Link to="/visa/schengen-visa-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Schengen Europe Visa</Link>
-                      <Link to="/visa/canada-visa-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Canada PR Photo size</Link>
-                      <Link to="/visa/australia-visa-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Australia Visa</Link>
-                      <Link to="/visa/dubai-uae-visa-photo" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Dubai / UAE Visa Formats</Link>
-                      <Link to="/visa/singapore-visa-photo" onClick={closeAllMenus} className="py-1.5 hover:text-blue-600">Singapore Visa Photo resizer</Link>
+                      <Link to="/visa/us-visa" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600 font-semibold">USA DS-160 Visa Photo</Link>
+                      <Link to="/visa/uk-visa" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">UK Visas & Immigration</Link>
+                      <Link to="/visa/schengen-visa" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Schengen Europe Visa</Link>
+                      <Link to="/visa/canada-visa" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Canada PR Photo size</Link>
+                      <Link to="/visa/australia-visa" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Australia Visa</Link>
+                      <Link to="/visa/uae-visa" onClick={closeAllMenus} className="py-1.5 border-b border-zinc-50 hover:text-blue-600">Dubai / UAE Visa Formats</Link>
+                      <Link to="/visa/singapore-visa" onClick={closeAllMenus} className="py-1.5 hover:text-blue-600">Singapore Visa Photo resizer</Link>
                     </div>
                   )}
                 </div>

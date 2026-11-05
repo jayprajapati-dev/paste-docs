@@ -1,4 +1,17 @@
+# robots.txt — PasteDocs
+# Allow all crawlers full access to valuable content
 User-agent: *
 Allow: /
 
+# Low-value or duplicate-prone paths — keep them out of the index
+Disallow: /share
+Disallow: /stats
+Disallow: /404
+Disallow: /assets/js/
+
+# Google AdSense crawler
+User-agent: Mediapartners-Google
+Allow: /
+
+# Sitemap + RSS feed
 Sitemap: https://pastedocs.vercel.app/sitemap.xml

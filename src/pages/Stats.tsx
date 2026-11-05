@@ -20,6 +20,7 @@ export default function Stats() {
       <Helmet>
         <title>PasteDocs | Public Statistics</title>
         <meta name="description" content="View live processing stats for PasteDocs. See how much time and data we have saved our users today." />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="canonical" href="https://pastedocs.vercel.app/stats" />
       </Helmet>
       

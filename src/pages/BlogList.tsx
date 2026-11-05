@@ -152,6 +152,7 @@ export default function BlogList() {
       <Helmet>
         <title>Guides & Formatting Insights | PasteDocs</title>
         <meta name="description" content="Official photo specifications, signature alignment, and private image dimension tutorials for India GSEB, Central State Board Exams, and online visas." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://pastedocs.vercel.app/blog" />
         <meta property="og:title" content="Guides & Formatting Insights | PasteDocs" />
         <meta property="og:description" content="Official photo specifications, signature alignment, and private image dimension tutorials for India GSEB, Central State Board Exams, and online visas." />

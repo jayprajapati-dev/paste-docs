@@ -57,11 +57,32 @@ export default defineConfig(({mode}) => {
     },
     build: {
       sourcemap: false,
+      // Raise the chunk size warning limit — heic2any (1.3MB) and ort (WASM ML model)
+      // are intentionally large and lazy-loaded only on the tools that need them.
+      chunkSizeWarningLimit: 1500,
       rollupOptions: {
         output: {
           chunkFileNames: 'assets/js/[name]-[hash].js',
           entryFileNames: 'assets/js/[name]-[hash].js',
-          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
+          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
+          // Manual chunk splitting — keeps the main bundle small and lets the browser
+          // cache heavy vendor libraries independently across page navigations.
+          manualChunks: {
+            // React core — loaded on every page, cached forever
+            'react-vendor': ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
+            // UI / animation — loaded on most pages
+            'ui-vendor': ['lucide-react', 'motion', 'clsx', 'tailwind-merge', 'react-hot-toast'],
+            // State management
+            'state-vendor': ['zustand'],
+            // Heavy ML / image libraries — lazy-loaded only on specific tools.
+            // Keeping them in named chunks makes them cacheable and lets the
+            // browser parallelise downloads when a user does hit that tool.
+            'heic-vendor': ['heic2any'],
+            'pdf-vendor': ['pdf-lib', 'pdfjs-dist'],
+            'doc-vendor': ['mammoth', 'xlsx', 'docx-preview'],
+            'bg-removal-vendor': ['@imgly/background-removal', 'onnxruntime-web'],
+            'image-vendor': ['browser-image-compression', 'exifr', 'konva', 'react-konva'],
+          }
         }
       }
     },

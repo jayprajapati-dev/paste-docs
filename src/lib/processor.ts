@@ -450,22 +450,43 @@ export const processFile = async (
     processedDimensions = { width: targetWidth, height: targetHeight };
 
     const canvas = document.createElement('canvas');
-    canvas.width = targetWidth;
-    canvas.height = targetHeight;
+    // For 90/270 rotation (without explicit target dimensions), swap canvas
+    // width/height so the rotated image fits exactly.
+    const isQuarterRotate = requirements.rotate === 90 || requirements.rotate === 270;
+    if (isQuarterRotate && !requirements.width && !requirements.height) {
+      canvas.width = targetHeight;
+      canvas.height = targetWidth;
+    } else {
+      canvas.width = targetWidth;
+      canvas.height = targetHeight;
+    }
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error("Failed to initialize canvas context");
 
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = 'high';
 
-    // Apply color/background rules in canvas paint layer
+    // Background fill MUST happen before rotation so it covers the whole canvas
+    // axis-aligned. Use canvas.width/canvas.height (not targetWidth/targetHeight)
+    // because 90/270 rotation swaps the canvas dimensions.
     if (requirements.backgroundColor && requirements.backgroundColor !== 'transparent') {
       ctx.fillStyle = requirements.backgroundColor;
-      ctx.fillRect(0, 0, targetWidth, targetHeight);
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
     } else if (targetMimeType === 'image/jpeg') {
-      // White default background for JPEGs
       ctx.fillStyle = '#ffffff';
-      ctx.fillRect(0, 0, targetWidth, targetHeight);
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    // Apply rotation (90 / 180 / 270 degrees clockwise) before drawing the image.
+    // The image is drawn into the rotated coordinate space, then we restore.
+    if (requirements.rotate) {
+      ctx.save();
+      ctx.translate(canvas.width / 2, canvas.height / 2);
+      ctx.rotate((requirements.rotate * Math.PI) / 180);
+      // After rotation, translate so the image is centred in the rotated space
+      const drawW = isQuarterRotate ? canvas.height : canvas.width;
+      const drawH = isQuarterRotate ? canvas.width : canvas.height;
+      ctx.translate(-drawW / 2, -drawH / 2);
     }
 
     // Compute aspect-ratio fitting and cropping vectors for exact dimension targets (e.g. Passport sizes)
@@ -513,9 +534,18 @@ export const processFile = async (
       ctx.drawImage(resized, 0, 0, targetWidth, targetHeight);
     }
 
+    // Restore the context state if we applied a rotation transform
+    if (requirements.rotate) {
+      ctx.restore();
+    }
+
+    // Update processedDimensions to reflect the actual canvas dimensions
+    // (swapped for 90/270 rotation without explicit target dimensions)
+    processedDimensions = { width: canvas.width, height: canvas.height };
+
     // Apply Grayscale filters
     if (requirements.colorMode === 'grayscale') {
-      const imgData = ctx.getImageData(0, 0, targetWidth, targetHeight);
+      const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
       const data = imgData.data;
       for (let i = 0; i < data.length; i += 4) {
         const gray = 0.3 * data[i] + 0.59 * data[i + 1] + 0.11 * data[i + 2];
@@ -528,23 +558,25 @@ export const processFile = async (
 
     // Draw Candidate Name / Photo Date stamp for Sarkari exams
     if (requirements.nameRequired || requirements.dateRequired) {
-      const bandHeight = Math.round(targetHeight * 0.18);
+      const stampW = canvas.width;
+      const stampH = canvas.height;
+      const bandHeight = Math.round(stampH * 0.18);
       ctx.fillStyle = '#ffffff';
-      ctx.fillRect(0, targetHeight - bandHeight, targetWidth, bandHeight);
+      ctx.fillRect(0, stampH - bandHeight, stampW, bandHeight);
       ctx.strokeStyle = '#cccccc';
       ctx.lineWidth = 1;
-      ctx.strokeRect(0, targetHeight - bandHeight, targetWidth, bandHeight);
-      
+      ctx.strokeRect(0, stampH - bandHeight, stampW, bandHeight);
+
       ctx.fillStyle = '#000000';
       ctx.font = `bold ${Math.max(10, Math.round(bandHeight * 0.32))}px Arial, Helvetica, sans-serif`;
       ctx.textAlign = 'center';
-      
-      const textX = targetWidth / 2;
-      let nameY = targetHeight - bandHeight / 2;
+
+      const textX = stampW / 2;
+      let nameY = stampH - bandHeight / 2;
       
       if (requirements.nameRequired && requirements.dateRequired) {
-        nameY = targetHeight - Math.round(bandHeight * 0.55);
-        const dateY = targetHeight - Math.round(bandHeight * 0.18);
+        nameY = stampH - Math.round(bandHeight * 0.55);
+        const dateY = stampH - Math.round(bandHeight * 0.18);
         ctx.fillText("CANDIDATE NAME", textX, nameY);
         ctx.font = `${Math.max(9, Math.round(bandHeight * 0.26))}px Arial, Helvetica, sans-serif`;
         const today = new Date();

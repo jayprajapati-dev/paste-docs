@@ -228,10 +228,12 @@ export default function BlogPost() {
     "description": post.metaDesc || post.excerpt,
     "image": currentImageUrl,
     "datePublished": post.date,
+    "dateModified": post.date,
     "author": {
       "@type": "Person",
       "name": "Jay Prajapati",
-      "jobTitle": "Indie Developer & IT Student"
+      "jobTitle": "Indie Developer & IT Student",
+      "url": "https://pastedocs.vercel.app/about"
     },
     "publisher": {
       "@type": "Organization",
@@ -247,11 +249,22 @@ export default function BlogPost() {
     }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pastedocs.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pastedocs.vercel.app/blog" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://pastedocs.vercel.app/blog/${post.slug}` }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <title>{post.metaTitle || `${post.title} | PasteDocs`}</title>
         <meta name="description" content={post.metaDesc || post.excerpt} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={`https://pastedocs.vercel.app/blog/${post.slug}`} />
         <meta property="og:title" content={post.metaTitle || `${post.title} | PasteDocs`} />
         <meta property="og:description" content={post.metaDesc || post.excerpt} />
@@ -267,6 +280,9 @@ export default function BlogPost() {
         <meta name="twitter:image" content={currentImageUrl} />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
 
@@ -332,6 +348,11 @@ export default function BlogPost() {
                   <div className="flex items-center gap-1.5">
                     <Clock className="w-4 h-4 text-zinc-400" />
                     <span>{post.readTime || "4 min read"}</span>
+                  </div>
+                  <span className="text-zinc-650" aria-hidden="true">•</span>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold flex items-center justify-center border border-emerald-500/30">JP</span>
+                    <span>By <Link to="/about" className="text-emerald-400 hover:text-emerald-300 font-semibold">Jay Prajapati</Link></span>
                   </div>
                   <span className="text-zinc-650" aria-hidden="true">•</span>
                   <div className="flex items-center gap-1.5 text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20">

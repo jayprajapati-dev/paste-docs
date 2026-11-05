@@ -21,6 +21,7 @@ export default function Contact() {
       <Helmet>
         <title>Contact Us | PasteDocs Support & Feedback</title>
         <meta name="description" content="Reach out to PasteDocs founder Jay Prajapati. Report bugs or request portal features. Remember: we operate with 100% Client-Side WebAssembly data isolation." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://pastedocs.vercel.app/contact" />
         <meta property="og:title" content="Contact Us | PasteDocs Support & Feedback" />
         <meta property="og:description" content="Reach out to PasteDocs founder Jay Prajapati. Report bugs or request portal features. Remember: we operate with 100% Client-Side WebAssembly data isolation." />

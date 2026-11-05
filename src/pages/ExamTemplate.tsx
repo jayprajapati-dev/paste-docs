@@ -107,18 +107,32 @@ export default function ExamTemplate({ slugOverride }: ExamTemplateProps = {}) {
     { name: "White Background Resizer", url: "/tool/white-background" },
   ].filter(p => p.url !== `/exam/${slug}`);
 
+  const examCanonical = `https://pastedocs.vercel.app/exam/${exam.slug}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pastedocs.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Exams", "item": "https://pastedocs.vercel.app/tools" },
+      { "@type": "ListItem", "position": 3, "name": exam.name, "item": examCanonical }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://pastedocs.vercel.app/exam/${exam.slug}`} />
+        <link rel="canonical" href={examCanonical} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://pastedocs.vercel.app/exam/${exam.slug}`} />
+        <meta property="og:url" content={examCanonical} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="PasteDocs" />
         <meta name="keywords" content={`${exam.name} photo resize, ${exam.name} signature, ${exam.authority} form formatting`} />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}

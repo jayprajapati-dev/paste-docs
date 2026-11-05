@@ -14,13 +14,9 @@ import { useSessionPersist } from '../hooks/useSessionPersist';
 import { useDocStore } from '../store/useDocStore';
 import { useEffect, useState } from 'react';
 
-interface ToolTemplateProps {
-  slugOverride?: string;
-}
-
-export default function ToolTemplate({ slugOverride }: ToolTemplateProps = {}) {
+export default function ToolTemplate() {
   const { slug: routeSlug } = useParams();
-  const slug = slugOverride || routeSlug;
+  const slug = routeSlug;
   const { requirementText, setRequirementText, files, parsedRequirements, updateRequirement, setActiveRequirements } = useDocStore();
   const [editingChip, setEditingChip] = useState<'format' | 'dimensions' | 'max_weight' | 'dpi' | 'bg_color' | null>(null);
 
@@ -40,13 +36,10 @@ export default function ToolTemplate({ slugOverride }: ToolTemplateProps = {}) {
   useBackgroundProcessor();
   useSessionPersist();
 
-  const normalizedSlug = slug
-    ? slug
-        .replace('compress-photo-', 'compress-')
-        .replace('-photo', '')
-    : '';
-
-  const tool = ALL_TOOLS.find(t => t.slug === slug || t.slug === normalizedSlug);
+  // Direct slug lookup — no normalization hack. The slug from the URL
+  // must match ALL_TOOLS exactly, otherwise we 404. This eliminates the
+  // duplicate-URL problem ("Alternative page with proper canonical tag").
+  const tool = ALL_TOOLS.find(t => t.slug === slug);
 
   // Parse and set the requirements dynamically on change
   useEffect(() => {
@@ -165,6 +158,8 @@ export default function ToolTemplate({ slugOverride }: ToolTemplateProps = {}) {
       backgroundColor: activeBackground,
       colorMode: activeColorMode,
       docType: parsedRequirements?.docType || (tool.requirements as any).docType || 'photo',
+      // Pass through rotate from tool specs (photo-rotate tool). Not parsed from text.
+      rotate: (tool.requirements as any).rotate,
       detectedFields: parsedRequirements?.detectedFields || ['Format', 'Dimensions', 'Size']
     };
     setActiveRequirements(merged);
@@ -227,11 +222,11 @@ export default function ToolTemplate({ slugOverride }: ToolTemplateProps = {}) {
     displayKb
   ].filter(Boolean).join(' • ');
 
-  // Dynamic SEO details
-  const metaTitle = `${tool.name} Tool - Online & 100% Offline | PasteDocs`;
-  const metaDescription = `Instantly format files for ${tool.name}. Follows current rules: ${bulletSpec || 'Configured Automatically'}. 100% private browser processing.`;
-  const h1 = `${tool.name} Tool — 100% Free & Local`;
-  const content = `Maintaining correct file sizes and layouts is critical for government form submissions, admissions, and photo updates. Our ${tool.name} tool handles standard compliance rules automatically.\n\nEverything operates locally inside your browser's memory using progressive image codecs. Adjust guidelines dynamically, crops borders with ease, and generates standard-compliant documents ready for immediate portal uploads.`;
+  // SEO content now comes from the rich per-tool data in toolData.ts.
+  const metaTitle = tool.metaTitle;
+  const metaDescription = tool.metaDescription;
+  const h1 = tool.h1;
+  const introParagraph = tool.intro;
 
   // Dynamic social preview image mapping from Unsplash (copyright-safe)
   let currentImageUrl = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828'; // Default passport/global document
@@ -252,37 +247,72 @@ export default function ToolTemplate({ slugOverride }: ToolTemplateProps = {}) {
     currentImageUrl = `${currentImageUrl.split('?')[0]}?auto=format&fit=crop&w=1200&h=630&q=80`;
   }
 
-  const faq = [
-    {
-      question: `What does the ${tool.name} utility do?`,
-      answer: `${tool.description}. It adjusts layouts, scales dimensions, and optimizes qualities step-by-step so that files meet your target constraints. Check the specifications in our configuration line.`
-    },
-    {
-      question: `Does this utility upload my files or credentials?`,
-      answer: `Never. PasteDocs is built with zero server-side uploads. Your files exist solely inside your browser. No metadata, identifiers, or signature shapes leave your hardware.`
-    },
-    {
-      question: `Why should I use PasteDocs instead of standard editing tools?`,
-      answer: `Standard photo filters don't give exact KB-level iterative control. PasteDocs lets you configure targets like 'max 50kb' or '3.5x4.5cm' directly, auto-computing the right trade-off between strict constraints and visual sharpness.`
-    }
-  ];
+  const faq = tool.faqs;
+
+  // Related tools (internal links — improves crawl discovery and PageRank flow)
+  const relatedTools = (tool.relatedSlugs || [])
+    .map(s => ALL_TOOLS.find(t => t.slug === s))
+    .filter((t): t is NonNullable<typeof t> => Boolean(t));
+
+  const canonicalUrl = `https://pastedocs.vercel.app/tool/${tool.slug}`;
+
+  // FAQPage schema (eligible for rich results)
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+    }))
+  };
+
+  // BreadcrumbList schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pastedocs.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "All Tools", "item": "https://pastedocs.vercel.app/tools" },
+      { "@type": "ListItem", "position": 3, "name": tool.name, "item": canonicalUrl }
+    ]
+  };
+
+  // WebApplication schema
+  const webAppSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "@id": canonicalUrl,
+    "url": canonicalUrl,
+    "name": `${tool.name} — PasteDocs`,
+    "description": tool.metaDescription,
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Runs 100% client-side.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "featureList": tool.useCases
+  };
 
   return (
     <>
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://pastedocs.vercel.app/tool/${tool.slug}`} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://pastedocs.vercel.app/tool/${tool.slug}`} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="PasteDocs" />
         <meta property="og:image" content={currentImageUrl} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="keywords" content={`${tool.name}, image utility, online compressor, local photo crop`} />
+        <meta name="keywords" content={tool.keywords.join(', ')} />
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(webAppSchema)}</script>
       </Helmet>
 
       {/* Hero Section with Generous Vertical Padding */}
@@ -699,27 +729,117 @@ export default function ToolTemplate({ slugOverride }: ToolTemplateProps = {}) {
       {/* Decorative ultra-faint layout rule line for About and FAQs */}
       <hr className="border-zinc-100 my-16 max-w-[1024px] mx-auto" />
 
-      {/* About and FAQ Accordion refactored with clean layout dividers */}
+      {/* About + Specs + Use cases + FAQ + Related tools */}
       <div className="max-w-[1024px] mx-auto px-4 sm:px-6 md:px-8 pb-16">
         <div className="max-w-3xl mx-auto">
+
+          {/* Long-form intro — unique per tool */}
           <article className="prose prose-zinc max-w-none mb-12 text-left">
-            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-4 tracking-tight">About this Utility</h2>
-            <div className="text-sm text-zinc-650 leading-relaxed whitespace-pre-line font-medium">
-              {content}
-            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-4 tracking-tight">About the {tool.name} tool</h2>
+            <p className="text-sm text-zinc-650 leading-relaxed font-medium">
+              {introParagraph}
+            </p>
           </article>
-          
+
+          {/* How it works — adds depth for AdSense "500-800 words" quality bar */}
+          <section className="mb-12 text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-4 tracking-tight">How it works</h2>
+            <ol className="space-y-3">
+              <li className="flex gap-3 text-sm text-zinc-650 leading-relaxed">
+                <span className="font-bold text-zinc-900 shrink-0">1.</span>
+                <span><strong className="text-zinc-800">Upload your file.</strong> Drag and drop your photo, signature, or document into the upload zone above. The file is read directly into your browser's local memory — it is never transmitted to any server.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-zinc-650 leading-relaxed">
+                <span className="font-bold text-zinc-900 shrink-0">2.</span>
+                <span><strong className="text-zinc-800">PasteDocs applies the {tool.name} spec automatically.</strong> The tool's target dimensions, file-size cap, format, background, and any special rules (rotation, name/date stamp) are pre-loaded from the configuration panel above. You can adjust any value inline before processing.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-zinc-650 leading-relaxed">
+                <span className="font-bold text-zinc-900 shrink-0">3.</span>
+                <span><strong className="text-zinc-800">The Canvas API processes locally.</strong> PasteDocs uses the browser's native HTML5 Canvas API (and pdf-lib / heic2any / SheetJS where relevant) to crop, compress, convert, rotate or flatten your file — all inside your device's RAM. No cloud GPU, no server-side processing.</span>
+              </li>
+              <li className="flex gap-3 text-sm text-zinc-650 leading-relaxed">
+                <span className="font-bold text-zinc-900 shrink-0">4.</span>
+                <span><strong className="text-zinc-800">Download instantly.</strong> The processed file appears in the Finished Results panel on the right. Download it directly — no email, no signup, no waiting. For multiple files, a ZIP is generated locally.</span>
+              </li>
+            </ol>
+          </section>
+
+          {/* Specs table — unique per tool */}
+          <section className="mb-12 text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-4 tracking-tight">Specifications</h2>
+            <div className="bg-white border border-zinc-100 rounded-2xl overflow-hidden shadow-sm">
+              <dl className="divide-y divide-zinc-50">
+                {tool.specs.map((spec) => (
+                  <div key={spec.label} className="grid grid-cols-3 gap-4 px-5 py-3 hover:bg-zinc-50/40 transition-colors">
+                    <dt className="text-xs font-bold text-zinc-400 uppercase tracking-wider self-center">{spec.label}</dt>
+                    <dd className="col-span-2 text-sm text-zinc-800 font-medium self-center">{spec.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </section>
+
+          {/* Why PasteDocs is different — privacy-first angle, strengthens E-E-A-T */}
+          <section className="mb-12 text-left bg-emerald-50/40 border border-emerald-100/60 rounded-2xl p-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-3 tracking-tight">Why PasteDocs is different</h2>
+            <p className="text-sm text-zinc-650 leading-relaxed mb-3">
+              Most online photo and document tools upload your file to a server, process it on a cloud GPU, and return the result. That model is fundamentally unsafe for biometric photos (passport, visa, Aadhaar, PAN), exam signatures, and scanned identity documents — once your file is on a server, you have no control over how long it is stored, who accesses it, or whether it is logged in a database breach.
+            </p>
+            <p className="text-sm text-zinc-650 leading-relaxed">
+              PasteDocs is built differently. Every tool on this site — including the {tool.name} — runs <strong className="text-zinc-800">100% in your browser</strong> using the HTML5 Canvas API, pdf-lib, heic2any, and other open-source client-side libraries. Your file is read into local memory, processed in your device's RAM, and offered back as a download. No HTTP upload. No server storage. No analytics pixel attached to your file. This is the safest way to prepare any sensitive document for a government portal, exam form, or visa application.
+            </p>
+          </section>
+
+          {/* Use cases — unique per tool */}
+          <section className="mb-12 text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-4 tracking-tight">Common use cases</h2>
+            <ul className="space-y-2">
+              {tool.useCases.map((use, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm text-zinc-650 leading-relaxed">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" aria-hidden="true" />
+                  <span>{use}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* FAQ — rendered as visible text + FAQPage schema above */}
           <div className="border-t border-zinc-100 pt-12 block text-left" id="faq-section">
             <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-6 tracking-tight">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {faq.map((item, i) => (
-                <div key={i} className="bg-white p-5 rounded-2xl border border-zinc-100 shadow-sm text-left">
-                  <h3 className="text-sm font-semibold text-zinc-900">{item.question}</h3>
-                  <p className="text-xs text-zinc-550 mt-1.5 leading-relaxed font-semibold">{item.answer}</p>
-                </div>
+                <details key={i} className="group bg-white p-5 rounded-2xl border border-zinc-100 shadow-sm text-left">
+                  <summary className="text-sm font-semibold text-zinc-900 cursor-pointer flex items-center justify-between gap-3 list-none">
+                    <span>{item.question}</span>
+                    <span className="text-zinc-400 group-open:rotate-180 transition-transform shrink-0" aria-hidden="true">▾</span>
+                  </summary>
+                  <p className="text-xs text-zinc-550 mt-3 leading-relaxed font-medium">{item.answer}</p>
+                </details>
               ))}
             </div>
           </div>
+
+          {/* Related tools — internal links for crawl discovery + PageRank flow */}
+          {relatedTools.length > 0 && (
+            <section className="border-t border-zinc-100 pt-12 mt-12 text-left">
+              <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-4 tracking-tight">Related tools</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {relatedTools.map((rt) => (
+                  <Link
+                    key={rt.slug}
+                    to={`/tool/${rt.slug}`}
+                    className="flex items-center gap-3 bg-white border border-zinc-100 rounded-xl p-4 hover:border-zinc-300 hover:shadow-sm transition-all"
+                  >
+                    <span className="text-xl" aria-hidden="true">{rt.icon}</span>
+                    <div className="min-w-0">
+                      <p className="text-sm font-semibold text-zinc-900 truncate">{rt.name}</p>
+                      <p className="text-xs text-zinc-500 truncate">{rt.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
       </div>
 

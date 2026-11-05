@@ -93,11 +93,11 @@ export default function App() {
               <Route path="doc/:slug" element={<DocTemplate />} />
               <Route path="visa/:slug" element={<VisaTemplate />} />
 
-              {/* High-Intent SEO Landing Pages */}
-              <Route path="compress-photo-to-20kb" element={<ToolTemplate slugOverride="compress-20kb" />} />
-              <Route path="ojas-photo-signature-resizer" element={<ExamTemplate slugOverride="gpsc" />} />
-              <Route path="ssc-photo-size-converter" element={<ExamTemplate slugOverride="ssc-cgl" />} />
-              
+              {/* Legacy URL aliases removed — they created duplicate pages at
+                  root-level paths that Google flagged as
+                  "Alternative page with proper canonical tag".
+                  External backlinks now 301-redirect via vercel.json. */}
+
               {/* Global 404 Catch-All */}
               <Route path="404" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />

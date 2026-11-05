@@ -1,8 +1,3 @@
-OWNERDOMAIN=pastedocs.vercel.app
-MANAGERDOMAIN=advorexmedia.com
-
-# Advorex Media
-advorexmedia.com, PUB40899235, DIRECT
-
-# Site verification
-Profiton check: 01be259bf84c242082e48223578f3151
+# ads.txt — Authorised Digital Sellers for PasteDocs
+# Google AdSense (sole ad network — required for AdSense approval)
+google.com, pub-1859756361440248, DIRECT, f08c47fec0942fa0

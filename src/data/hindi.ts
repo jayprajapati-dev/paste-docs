@@ -43,7 +43,7 @@ export const hindiData: HindiData[] = [
     ],
     relatedPages: [
       { name: "SSC Photo Formats", url: "/exam/ssc-cgl" },
-      { name: "Compress to 20KB", url: "/tool/compress-photo-20kb" }
+      { name: "Compress to 20KB", url: "/tool/compress-20kb" }
     ]
   }
 ];

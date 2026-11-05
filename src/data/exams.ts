@@ -46,7 +46,7 @@ export const examsData: ExamData[] = [
       }
     ],
     relatedPages: [
-      { name: "Compress Photo to 50KB", url: "/tool/compress-photo-50kb" },
+      { name: "Compress Photo to 50KB", url: "/tool/compress-50kb" },
       { name: "JEE Main Photo Resize", url: "/exam/jee-main" },
       { name: "UPSC Photo Format", url: "/exam/upsc-cse" },
       { name: "Passport Size Photo Maker", url: "/doc/passport" }
@@ -84,7 +84,7 @@ export const examsData: ExamData[] = [
     ],
     relatedPages: [
       { name: "NEET Photo Resize", url: "/exam/neet-ug" },
-      { name: "Compress Photo to 20KB", url: "/tool/compress-photo-20kb" },
+      { name: "Compress Photo to 20KB", url: "/tool/compress-20kb" },
       { name: "Signature Resize 140x60", url: "/tool/signature-resize" }
     ]
   },
@@ -155,7 +155,7 @@ export const examsData: ExamData[] = [
     ],
     relatedPages: [
       { name: "Railway NTPC Prep", url: "/exam/railway-ntpc" },
-      { name: "Compress Photo to 50KB", url: "/tool/compress-photo-50kb" }
+      { name: "Compress Photo to 50KB", url: "/tool/compress-50kb" }
     ]
   },
   {
@@ -293,7 +293,7 @@ export const examsData: ExamData[] = [
       }
     ],
     relatedPages: [
-      { name: "Compress Photo to 100KB", url: "/tool/compress-photo-100kb" },
+      { name: "Compress Photo to 100KB", url: "/tool/compress-100kb" },
       { name: "Change Background", url: "/tool/white-background" }
     ]
   }

@@ -90,18 +90,32 @@ export default function DocTemplate() {
     }
   ];
 
+  const docCanonical = `https://pastedocs.vercel.app/doc/${doc.slug}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pastedocs.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Documents", "item": "https://pastedocs.vercel.app/tools" },
+      { "@type": "ListItem", "position": 3, "name": doc.name, "item": docCanonical }
+    ]
+  };
+
   return (
     <>
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://pastedocs.vercel.app/doc/${doc.slug}`} />
+        <link rel="canonical" href={docCanonical} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://pastedocs.vercel.app/doc/${doc.slug}`} />
+        <meta property="og:url" content={docCanonical} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="PasteDocs" />
         <meta name="keywords" content={`${doc.name} crop, ${doc.name} resize, identity document format maker`} />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
       {/* Hero Section */}

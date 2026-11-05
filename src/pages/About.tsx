@@ -29,6 +29,7 @@ export default function About() {
       <Helmet>
         <title>The Story Behind PasteDocs: Privacy-First Document Sizing</title>
         <meta name="description" content="Founded by Jay Prajapati in May 2026. Engineered to eliminate identity risks on server-based resizers through 100% offline WebAssembly and client-side processing." />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://pastedocs.vercel.app/about" />
         <meta property="og:title" content="The Story Behind PasteDocs: Privacy-First Document Sizing" />
         <meta property="og:description" content="Founded by Jay Prajapati in May 2026. Engineered to eliminate identity risks on server-based resizers through 100% offline WebAssembly and client-side processing." />

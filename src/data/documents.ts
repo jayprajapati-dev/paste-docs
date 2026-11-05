@@ -78,7 +78,7 @@ export const documentsData: DocumentData[] = [
     ],
     relatedPages: [
       { name: "Aadhaar Card Sync", url: "/doc/aadhaar-card" },
-      { name: "Compress to 50KB", url: "/tool/compress-photo-50kb" }
+      { name: "Compress to 50KB", url: "/tool/compress-50kb" }
     ]
   }
 ];

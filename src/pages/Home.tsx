@@ -118,17 +118,68 @@ export default function Home() {
     }
   };
 
+  // Organization schema — strengthens E-E-A-T and AdSense trust signals
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://pastedocs.vercel.app/#organization",
+    "name": "PasteDocs",
+    "url": "https://pastedocs.vercel.app/",
+    "description": "Free, privacy-first online photo and signature resizer for Indian government exams and visa applications.",
+    "founder": {
+      "@type": "Person",
+      "name": "Jay Prajapati",
+      "jobTitle": "Indie Developer & IT Student",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    },
+    "email": "uddan1711@gmail.com",
+    "logo": "https://pastedocs.vercel.app/favicon.svg",
+    "sameAs": []
+  };
+
+  // WebSite schema with SearchAction — enables sitelinks search box
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://pastedocs.vercel.app/#website",
+    "url": "https://pastedocs.vercel.app/",
+    "name": "PasteDocs",
+    "description": "Online photo resizer, signature converter and image compressor for Indian government exams and visa applications.",
+    "publisher": { "@id": "https://pastedocs.vercel.app/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pastedocs.vercel.app/tools?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <>
       <Helmet>
         <title>PasteDocs - Online Photo & Signature Resizer for Government Exams</title>
         <meta name="description" content="Instantly resize photos and signatures for government portals. Supports requirements in English, Hindi, and Gujarati. 100% private, offline, and free document formatter." />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href="https://pastedocs.vercel.app/" />
         <meta property="og:title" content="PasteDocs - Online Photo & Signature Resizer for Government Exams" />
         <meta property="og:description" content="Instantly resize photos and signatures for government portals. Supports requirements in English, Hindi, and Gujarati. 100% private, offline, and free document formatter." />
         <meta property="og:url" content="https://pastedocs.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="PasteDocs" />
+        <script type="application/ld+json">
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(websiteSchema)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(webAppSchema)}
         </script>
@@ -155,10 +206,10 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-950 leading-tight mb-4">
-                Any Document <span className="text-zinc-400">to Any Requirement</span>
+                Photo & Signature Resizer <span className="text-zinc-400">for Government Exams</span>
               </h1>
               <p className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-6">
-                Paste the rules, we do the rest. Instantly format photos and IDs for any admission or government portal. 100% private, offline processing with zero server uploads. No account needed. <Link to="/about" className="text-emerald-600 hover:underline hover:underline-offset-4 transition-all duration-200 font-medium" aria-label="Read our privacy promise">Read our privacy promise</Link>
+                Free online photo resizer, signature converter and image compressor for NEET, SSC, UPSC, IBPS and visa applications. Compress to 20KB, 50KB, 100KB or 200KB. 100% private — runs in your browser, no server uploads, no account needed. <Link to="/about" className="text-emerald-600 hover:underline hover:underline-offset-4 transition-all duration-200 font-medium" aria-label="Read our privacy promise">Read our privacy promise</Link>
               </p>
             </header>
             <UploadZone />

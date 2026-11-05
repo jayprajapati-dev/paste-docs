@@ -21,7 +21,7 @@ export interface VisaRequirement {
 
 export const visaRequirements: VisaRequirement[] = [
   {
-    slug: "us-visa-photo",
+    slug: "us-visa",
     name: "USA Visa / Passport",
     country: "United States",
     category: "North America",
@@ -32,7 +32,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["us visa photo resize", "ds-160 photo size", "us passport photo 600x600"]
   },
   {
-    slug: "uk-visa-photo",
+    slug: "uk-visa",
     name: "UK Visa",
     country: "United Kingdom",
     category: "Europe",
@@ -43,7 +43,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["uk visa photo resize", "ukvi photo size", "uk visa 45x35mm"]
   },
   {
-    slug: "schengen-visa-photo",
+    slug: "schengen-visa",
     name: "Schengen Visa (Europe)",
     country: "Europe (27 countries)",
     category: "Europe",
@@ -54,7 +54,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["schengen visa photo resize", "europe visa photo size", "schengen photo 35x45"]
   },
   {
-    slug: "canada-visa-photo",
+    slug: "canada-visa",
     name: "Canada Visa / PR",
     country: "Canada",
     category: "North America",
@@ -65,7 +65,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["canada visa photo resize", "canada pr photo size", "canada immigration photo"]
   },
   {
-    slug: "australia-visa-photo",
+    slug: "australia-visa",
     name: "Australia Visa",
     country: "Australia",
     category: "Asia Pacific",
@@ -76,7 +76,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["australia visa photo resize", "australian visa photo size"]
   },
   {
-    slug: "dubai-uae-visa-photo",
+    slug: "uae-visa",
     name: "Dubai / UAE Visa",
     country: "UAE",
     category: "Middle East",
@@ -87,7 +87,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["dubai visa photo resize", "uae visa photo size", "dubai photo requirements"]
   },
   {
-    slug: "singapore-visa-photo",
+    slug: "singapore-visa",
     name: "Singapore Visa",
     country: "Singapore",
     category: "Asia Pacific",
@@ -98,7 +98,7 @@ export const visaRequirements: VisaRequirement[] = [
     keywords: ["singapore visa photo resize", "singapore visa photo 60kb"]
   },
   {
-    slug: "japan-visa-photo",
+    slug: "japan-visa",
     name: "Japan Visa",
     country: "Japan",
     category: "Asia Pacific",
